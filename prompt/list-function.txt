@@ -1,0 +1,10 @@
+create a list function that accepts bucket string , prefix string , list_ch channel of strings.
+the list function should use the official sdk for go v2: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/getting-started.html
+it should list all the object at paramter bucket, and filter by given prefix paramter.
+the filter must be inside the s3 backend, do not use filter on the client side, don't iterate all keys and filter, pass the paramter as filter param.
+every time list the next 1000 objects.
+each object key and key only should be inserted to list_ch channel of strings.
+when all objects exhausted, the function should finish.
+write as simple as possible code, don't optimize.
+all the creds would be taken from the env vars by default aws cred chain, don't pass anything expicit.
+the region would from the env vars by default aws cred chain, don't pass anything expicit.
