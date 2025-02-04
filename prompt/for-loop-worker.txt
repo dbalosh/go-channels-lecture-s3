@@ -1,0 +1,1 @@
+"surround with for loop, from 0 until 5, pass the current index to the push command instead of 999 paramter"
