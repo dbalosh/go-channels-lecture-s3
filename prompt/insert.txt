@@ -1,0 +1,1 @@
+"Write a Go function named push that takes an integer index and a channel ch of type chan int. The function should print the starting index, sleep for 2 seconds, send the index to the channel, and then print the ending index."
