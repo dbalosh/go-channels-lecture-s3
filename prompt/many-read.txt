@@ -1,0 +1,10 @@
+create a read function that accepts bucket string , list_ch channel of strings , read_ch channel of strings.
+the read function should use the official sdk for go v2: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/getting-started.html
+the read function should read a s3 key string from the channel of strings
+then read the key content, and parse it into string.
+each object content as string and content as string only should be inserted to read_ch channel of strings.
+the read function should run in infinite loop, every time try to read from list_ch a single s3 key read it's content and put it inside read_ch.
+write as simple as possible code, don't optimize.
+all the creds would be taken from the env vars by default aws cred chain, don't pass anything expicit.
+the region would from the env vars by default aws cred chain, don't pass anything expicit.
+exception should only be logged, no fancy shit.
