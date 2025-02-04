@@ -8,3 +8,4 @@ when all objects exhausted, the function should finish.
 write as simple as possible code, don't optimize.
 all the creds would be taken from the env vars by default aws cred chain, don't pass anything expicit.
 the region would from the env vars by default aws cred chain, don't pass anything expicit.
+use the build in iterator for the for loop.
